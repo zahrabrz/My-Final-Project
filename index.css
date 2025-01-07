@@ -262,6 +262,24 @@ button {
   white-space: nowrap;
   z-index: 22;
 }
+
+.rectangle{
+  color: #ffffff;
+   display: flex;
+  align-items: flex-start;
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  top: 62px;
+ left: 83px;
+ font-family: Shabnam, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+  white-space: nowrap;
+  z-index: 22;
+}
 .vector {
   position: absolute;
   width: 2.44%;

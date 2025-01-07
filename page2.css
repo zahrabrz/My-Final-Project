@@ -1,0 +1,427 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1024px;
+    height: 1103px;
+    margin: 0 auto;
+    background: #141414;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 686px;
+    height: 805px;
+    top: 131px;
+    right: 164px;
+    background: #1c1c1c;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 20px;
+    position: relative;
+    min-width: 0;
+    height: 156px;
+    padding: 0 0 0 0;
+    z-index: 1;
+  }
+  .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    top: 175px;
+    left: 609px;
+    color: #9ca3af;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 19.5px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 8;
+  }
+  .home {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 175px;
+    left: 743px;
+    background: url(./assets2/images/34641f5a-f291-4d7f-82f9-9358ee6ed4cd.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 23;
+    overflow: hidden;
+  }
+  .text-home {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 39px;
+    height: 20px;
+    top: 177px;
+    left: 698px;
+    color: #9ca3af;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 19.5px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .vector {
+    position: absolute;
+    width: 0.65%;
+    height: 1.06%;
+    top: 16.41%;
+    left: 66.89%;
+    background: url(./assets2/images/c25fcc93-e138-4f7b-a7ca-6989e7f98699.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 22;
+  }
+  .text-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 234px;
+    height: 45px;
+    top: 247px;
+    right: 259px;
+    color: #ffffff;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 502px;
+    height: 79px;
+    top: 345px;
+    right: 261px;
+    padding: 12px 16px 12px 16px;
+    background: rgba(54, 47, 120, 0.5);
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .input-2 {
+    flex-shrink: 0;
+    position: absolute;
+    width: 502px;
+    height: 79px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 6;
+    outline: none;
+  }
+  .email {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 67px;
+    height: 45px;
+    color: #9ca3af;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 45px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .envelope {
+    flex-shrink: 0;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: url(./assets2/images/1a0c0595-5a47-41f0-8de0-766519fbf0fe.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .input-3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 502px;
+    height: 79px;
+    top: 471px;
+    right: 261px;
+    padding: 12px 16px 12px 16px;
+    background: rgba(54, 47, 120, 0.5);
+    z-index: 9;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .input-4 {
+    flex-shrink: 0;
+    position: absolute;
+    width: 502px;
+    height: 79px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 12;
+    outline: none;
+  }
+  .content-5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 10px;
+    position: relative;
+    min-width: 0;
+    z-index: 10;
+  }
+  .text-6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 96px;
+    height: 45px;
+    color: #9ca3af;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 45px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 11;
+  }
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 45px;
+    height: 46px;
+    top: 617px;
+    right: 265px;
+    padding: 10px 10px 10px 10px;
+    background: rgba(85, 84, 95, 0.56);
+    z-index: 20;
+    border-radius: 4px;
+  }
+  .content-7 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 226px;
+    height: 30px;
+    top: 622px;
+    left: 479px;
+    z-index: 16;
+  }
+  .remember-note {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 112px;
+    height: 30px;
+    color: #ffffff;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 17;
+  }
+  .content-8 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 226px;
+    height: 30px;
+    top: 622px;
+    left: 172px;
+    z-index: 18;
+  }
+  .password-forget {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 138px;
+    height: 30px;
+    color: #ffffff;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 19;
+  }
+  .login-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 502px;
+    height: 79px;
+    top: 704px;
+    right: 265px;
+    padding: 12px 16px 12px 16px;
+    cursor: pointer;
+    background: #42389d;
+    border: none;
+    z-index: 13;
+    border-radius: 8px;
+  }
+  .login-enter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 158px;
+    height: 45px;
+    color: #ffffff;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 45px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 14;
+  }
+  .content-9 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 140px;
+    height: 45px;
+    padding: 0 0 0 0;
+    z-index: 15;
+  }
+  .text-a {
+    position: absolute;
+    width: 312px;
+    height: 30px;
+    top: 811px;
+    left: 447px;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 21;
+  }
+  .not-registered {
+    position: relative;
+    color: #9ca3af;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+  }
+  .ha {
+    position: relative;
+    color: #9ca3af;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: -0.2px;
+  }
+  .create-account {
+    position: relative;
+    color: #9ca3af;
+    font-family: Shabnam, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+  }
+  

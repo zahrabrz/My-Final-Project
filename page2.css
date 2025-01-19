@@ -424,4 +424,87 @@
     line-height: 30px;
     text-align: right;
   }
-  
+
+/* General Toast Styling */
+#toast-simple {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem; /* Distance slightly more from bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  width: 100%;
+  max-width: 20rem; /* Adjust max width */
+  padding: 1rem;
+  gap: 1rem;
+  color: #ffffff; /* White text color */
+  background-color: rgba(75, 85, 99, 0.9); /* Semi-transparent gray background */
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: none; /* Remove border */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Divider Styling */
+#toast-simple > .divide-x {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+#toast-simple > .rtl\:divide-x-reverse {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: none;
+}
+
+/* Text and Icon Styling */
+#toast-simple .text-gray-500 {
+  color: #ffffff; /* White text for better contrast */
+}
+#toast-simple .dark\:text-gray-400 {
+  color: #ffffff; /* Adjusted for dark mode */
+}
+#toast-simple .dark\:bg-gray-800 {
+  background-color: rgba(31, 41, 55, 0.9); /* Adjusted for dark mode */
+}
+#toast-simple .dark\:divide-gray-700 {
+  border-color: rgba(55, 65, 81, 0.2); /* Adjusted for dark mode divider */
+}
+
+/* Icon Styling */
+#toast-simple svg {
+  width: 1.25rem; /* Icon size */
+  height: 1.25rem;
+  color: #3b82f6; /* Neely blue color */
+}
+#toast-simple .dark\:text-blue-500 {
+  color: #60a5fa; /* Neely blue for dark mode */
+}
+
+/* RTL Support */
+#toast-simple.rtl {
+  direction: rtl;
+}
+#toast-simple .rtl\:space-x-reverse > *:not(:first-child) {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+/* Success Message Text */
+#toast-simple .text-sm {
+  font-size: 1.2rem; /* Slightly larger font size */
+}
+#toast-simple .font-normal {
+  font-weight: 400;
+}
+#toast-simple .ps-4 {
+  padding-inline-start: 1rem;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  #toast-simple {
+      color: #ffffff; /* Adjust text color */
+      background-color: rgba(179, 168, 214, 0.9); /* Adjust background color */
+  }
+  #toast-simple svg {
+      color: #60a5fa; /* Adjust icon color */
+  }
+}

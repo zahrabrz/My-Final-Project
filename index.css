@@ -153,7 +153,64 @@ button {
   white-space: nowrap;
   z-index: 5;
 }
+
+.rectangle{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 101px;
+  height: 33px;
+  top: 58px;
+  right: 848px;
+  color: #ffffff;
+  font-family: Shabnam, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1000
+ }
+
+.rectangle5{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 101px;
+  height: 33px;
+  top: 58px;
+  right: 280px;
+  color: #ffffff;
+  font-family: Shabnam, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 6
+ }
+
+.rectangle3{
+ 
+  align-items: flex-start;
+  justify-content:center;
+  position: absolute;
+  width: 55px;
+  height: 14px;
+  top: 927px;
+  right: 253px;
+  color: #ffffff;
+  font-family: Shabnam, var(--default-font-family);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: right;
+  white-space: nowrap;
+  z-index: 410;
 }
+
 .text {
   display: flex;
   align-items: flex-start;
@@ -184,6 +241,19 @@ button {
   top: 58px;
   right: 402px;
   z-index: 11;
+}
+.link-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 124px;
+  height: 66px;
+  top: 58px;
+  right: 402px;
+  z-index: 400;
 }
 .text-4 {
   display: flex;
@@ -283,7 +353,7 @@ button {
   z-index: 22;
 }
 
-.rectangle{
+.gle{
   color: #ffffff;
    display: flex;
   align-items: flex-start;
@@ -1445,7 +1515,7 @@ button {
   white-space: nowrap;
   z-index: 186;
 }
-.view-course {
+.C{
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -1463,6 +1533,8 @@ button {
   white-space: nowrap;
   z-index: 97;
 }
+
+
 .currency-4c {
   display: flex;
   align-items: flex-end;
@@ -3620,7 +3692,7 @@ button {
   width: 132px;
   z-index: 244;
 }
-.rectangle {
+.rectangle-e0{
   flex-shrink: 0;
   position: relative;
   width: 12px;

@@ -1,377 +1,118 @@
-:root {
-  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-    "Source Han Sans CN", sans-serif;
+body {
+  direction: rtl;
+  background: #f3f4f6;
+  font-family: 'Shabnam', sans-serif;
 }
 
 .main-container {
-  overflow: hidden;
-}
-
-.main-container,
-.main-container * {
-  box-sizing: border-box;
-}
-
-input,
-select,
-textarea,
-button {
-  outline: 0;
-}
-
-.main-container {
-  position: relative;
-  width: 1024px;
-  height: 1369px;
+  max-width: 1200px;
   margin: 0 auto;
-  background: #141414;
-  overflow: hidden;
-  border-radius: 8px;
+  padding: 20px;
+  
 }
+
+
+.card,
+.dropdown {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: transparent;
+  
+}
+
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex-wrap: nowrap;
-  position: absolute;
-  width: 686px;
-  height: 987px;
-  top: 128px;
-  right: 169px;
-  background: #1c1c1c;
-  overflow: hidden;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 20px;
-  position: relative;
-  min-width: 0;
-  height: 156px;
-  padding: 0 0 0 0;
-  z-index: 1;
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-.text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  position: absolute;
-  width: 60px;
-  height: 20px;
-  top: 195px;
-  left: 614px;
-  color: #9ca3af;
-  font-family: Shabnam, var(--default-font-family);
-  font-size: 13px;
-  font-weight: 100;
-  line-height: 19.5px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 3;
+
+.search-container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
 }
-.home {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 195px;
-  left: 738px;
-  background: url(./assets3/images/9f52d50b-fd78-4397-8be7-590c0d7a331b.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 5;
-  overflow: hidden;
-}
-.text-1 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  position: absolute;
-  width: 39px;
-  height: 20px;
-  top: 197px;
-  left: 693px;
-  color: #9ca3af;
-  font-family: Shabnam, var(--default-font-family);
-  font-size: 13px;
-  font-weight: 100;
-  line-height: 19.5px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 2;
-}
-.vector {
-  position: absolute;
-  width: 0.65%;
-  height: 0.31%;
-  top: 14.9%;
-  left: 66.31%;
-  background: url(./assets3/images/cfde2261-18ef-4119-b86e-47891b642279.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 4;
-}
-.input {
+
+.search-box {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  position: absolute;
-  width: 488px;
-  height: 50px;
-  top: 284px;
-  right: 268px;
-  padding: 12px 16px 12px 16px;
-  background: #42389d;
-  z-index: 6;
-  border-radius: 8px;
+  gap: 10px;
 }
-.text-2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 78px;
-  height: 26px;
-  color: #9ca3af;
-  font-family: Shabnam, var(--default-font-family);
-  font-size: 17px;
-  font-weight: 100;
-  line-height: 25.5px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 7;
+
+.search-input {
+  flex: 1;
+  height: 45px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.content-3 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  width: 188px;
-  z-index: 8;
+
+.search-input:focus {
+  outline: none;
+  border-color: #29254A;
+  box-shadow: 0 0 8px rgba(41, 37, 74, 0.5);
 }
-.search-outline {
-  flex-shrink: 0;
-  position: relative;
-  width: 18px;
-  height: 18px;
-  background: url(./assets3/images/d70a5351-13f2-4df3-b800-0a53fd04b40b.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 9;
-  overflow: hidden;
+
+.search-button {
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #42389D;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-button:hover {
+  background-color: #1f1b38;
+  transform: scale(1.05);
+}
+
+.search-button:active {
+  background-color: #15112a;
 }
 .dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 12px;
-  position: absolute;
-  width: 488px;
-  height: 315px;
-  top: 344px;
-  right: 268px;
-  padding: 16px 16px 16px 16px;
-  background: #29254a;
-  z-index: 10;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  padding: 10px; /* کاهش فضای داخلی کل دراپ‌داون */
+  background-color: #29254A;
+  width: 50%; /* کوچک‌تر کردن عرض کل دراپ‌داون */
+  margin: 0 auto; /* وسط‌چین کردن کل دراپ‌داون */
 }
-.recent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 414px;
-  height: 24px;
-  color: #9ca3af;
-  font-family: Shabnam, var(--default-font-family);
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 24px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 11;
+
+.dropdown-title {
+  font-size: 14px; /* کوچک‌تر کردن فونت عنوان */
+  font-weight: 600;
+  margin-bottom: 8px; /* کاهش فاصله زیر عنوان */
+  color: #dcdce4;
+  text-align: center; /* وسط‌چین کردن عنوان */
 }
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  width: 366px;
-  z-index: 12;
+
+.dropdown-item {
+  padding: 5px; /* کاهش فضای داخلی آیتم‌ها */
+  background: #4A4A4A;
+  opacity: 30%;
+  border-radius: 4px;
+  margin-bottom: 8px; /* کاهش فاصله بین آیتم‌ها */
+  cursor: pointer;
+  color: #dcdce4;
+  text-align: center; /* وسط‌چین کردن متن آیتم‌ها */
+  font-size: 14px; /* کوچک‌تر کردن متن آیتم‌ها */
 }
-.nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  width: 366px;
-  padding: 8px 12px 8px 12px;
-  background: rgba(74, 74, 74, 0.26);
-  z-index: 13;
-  border-radius: 8px;
-}
-.x {
-  flex-shrink: 0;
-  position: relative;
-  width: 14px;
-  height: 14px;
-  background: url(./assets3/images/953ffbcf-de71-42a2-8a78-3180f102a38c.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 14;
-  overflow: hidden;
-}
-.photoshop {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  min-width: 0;
-  height: 21px;
-  color: #6b7280;
-  font-family: Shabnam, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 15;
-}
-.swatchbook {
-  flex-shrink: 0;
-  position: relative;
-  width: 14px;
-  height: 14px;
-  background: url(./assets3/images/1a813cef-ccaf-45d6-b9c0-c1abb36bfc04.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 16;
-  overflow: hidden;
-}
-.nav-link-4 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  width: 366px;
-  padding: 8px 12px 8px 12px;
-  background: rgba(74, 74, 74, 0.26);
-  z-index: 17;
-  border-radius: 8px;
-}
-.x-5 {
-  flex-shrink: 0;
-  position: relative;
-  width: 14px;
-  height: 14px;
-  background: url(./s/images/16f95df3-3729-4ef2-bf1a-ad578a881121.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 18;
-  overflow: hidden;
-}
-.text-6 {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  min-width: 0;
-  height: 21px;
-  color: #6b7280;
-  font-family: Shabnam, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 19;
-}
-.wand-magic-sparkles {
-  flex-shrink: 0;
-  position: relative;
-  width: 14px;
-  height: 14px;
-  background: url(./assets3/images/9f4eb242-66f9-4733-856f-39e4f1e8f8ab.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 20;
-  overflow: hidden;
-}
-.nav-link-7 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  width: 366px;
-  padding: 8px 12px 8px 12px;
-  background: rgba(74, 74, 74, 0.26);
-  z-index: 21;
-  border-radius: 8px;
-}
-.x-8 {
-  flex-shrink: 0;
-  position: relative;
-  width: 14px;
-  height: 14px;
-  background: url(./s/images/842586a6-a8b1-4906-a77f-99353d25ce64.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 22;
-  overflow: hidden;
-}
-.typography {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  min-width: 0;
-  height: 21px;
-  color: #6b7280;
-  font-family: Shabnam, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: right;
-  white-space: nowrap;
-  z-index: 23;
-}
-.clipboard {
-  flex-shrink: 0;
-  position: relative;
-  width: 14px;
-  height: 14px;
-  background: url(./assets3/images/fbc6efaa-1803-4969-ab4c-29fe60c3c354.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 24;
-  overflow: hidden;
+
+.dropdown-item:hover {
+  background: #e5e7eb;
+  color: #29254A; /* تغییر رنگ متن هنگام هاور */
 }

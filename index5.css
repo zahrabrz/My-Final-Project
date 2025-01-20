@@ -586,3 +586,8 @@ button {
   z-index: 28;
   overflow: hidden;
 }
+#lottieContainer {
+  width: 300px; /* تنظیم عرض */
+  height: 300px; /* تنظیم ارتفاع */
+  margin: 0 auto; /* مرکز کردن انیمیشن */
+}
